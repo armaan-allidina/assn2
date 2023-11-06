@@ -1,8 +1,17 @@
 body{
     text-wrap: balance;
+    background-color: black;
+    color: white;
+}
+.pad{
+    padding: 30px 50px;
+    max-width: 1440px;
+    margin: auto;
 }
 .comp{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.comp img{
+    transform: scale(.5);
 }
