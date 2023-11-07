@@ -1,23 +1,33 @@
-body{
+body {
     text-wrap: balance;
     background-color: black;
     color: white;
     font-family: 'Gill Sans', sans-serif;
     font-size: 25px;
 }
-h1{
+
+h1 {
     font-family: 'Mistral';
     font-size: 50px;
 }
-.pad{
+
+.pad {
     padding: 30px 50px;
     max-width: 1440px;
     margin: auto;
 }
-.comp{
+
+.comp {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.comp img{
+
+.comp img {
     transform: scale(.5);
+}
+
+@media screen and (max-width: 800px) {
+    .comp {
+        grid-template-columns: 1fr;
+    }
 }
