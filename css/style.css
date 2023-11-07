@@ -29,8 +29,11 @@ div {
 .game {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
 }
-
+/* .game div:nth-child(6) img{
+    transform: scale(.5);
+} */
 .comp img {
     transform: scale(.5);
 }
