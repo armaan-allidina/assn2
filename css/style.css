@@ -10,34 +10,35 @@ h1 {
     font-family: 'Mistral';
     font-size: 50px;
 }
-div{
+
+div {
     font-size: 15px;
 }
+
 .pad {
     padding: 30px 50px;
     max-width: 1440px;
     margin: auto;
 }
 
-.comp, {
+.comp {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.game{
+
+.game {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-} 
-.game div:nth-child(6) {
-    transform: scale(.5);
-    font-size: 30px;
-}
+
 .comp img {
     transform: scale(.5);
 }
 
 @media screen and (max-width: 800px) {
-    .comp, .game{
+
+    .comp,
+    .game {
         grid-template-columns: 1fr;
     }
 }
