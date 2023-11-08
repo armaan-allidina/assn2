@@ -21,26 +21,33 @@ div {
     margin: auto;
 }
 
-.comp, .xbox {
+.comp,
+.xbox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .game {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap:5px;
 }
-.xbox img{
+
+.xbox img {
     transform: scale(.75);
 }
+
 .comp img {
     transform: scale(.5);
+}
+.game div:nth-child(6) img{
+    transform: scale(.4);
 }
 
 @media screen and (max-width: 800px) {
 
     .comp,
-    .game {
+    .game,
+    .xbox {
         grid-template-columns: 1fr;
     }
 }
